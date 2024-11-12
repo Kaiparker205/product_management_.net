@@ -1,0 +1,51 @@
+﻿@model dynamic
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            @if (Model is IEnumerable<Product>)
+            {
+                <th>Name</th>
+                <th>Price</th>
+            }
+            else if (Model is IEnumerable<Employer>)
+            {
+                <th>Name</th>
+                <th>Email</th>
+            }
+            else if (Model is IEnumerable<Order>)
+            {
+                <th>Employer Name</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                @if (item is Product)
+                {
+                    <td>@item.Name</td>
+                    <td>@item.Price</td>
+                }
+                else if (item is Employer)
+                {
+                    <td>@item.Name</td>
+                    <td>@item.Email</td>
+                }
+                else if (item is Order)
+                {
+                    <td>@item.Employer.Name</td>
+                    <td>@item.Product.Name</td>
+                    <td>@item.Price</td>
+                    <td>@item.Quantity</td>
+                    <td>@(item.Price * item.Quantity)</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

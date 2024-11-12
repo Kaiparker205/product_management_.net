@@ -1,0 +1,69 @@
+﻿@model IEnumerable<WebTestApp.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<div class="container mx-auto mt-12 p-8 bg-gradient-to-br from-white to-gray-50 ">
+    <div class="flex justify-between items-center mb-8">
+        <h1 class="text-4xl font-bold text-gray-800 tracking-wide">@ViewData["Title"]</h1>
+        <a asp-action="create" class=" bg-blue-500 text-white hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105 focus:ring-4 focus:ring-green-300">
+            + Add Product 
+        </a>
+    </div>
+
+    <div id="dynamicTable" class="overflow-hidden ">
+        <table id="dataTable" class="min-w-full bg-white">
+            <thead class="bg-gray-800 text-white text-left">
+                <tr>
+                    <th class="px-6 py-4 text-left border-b border-gray-200">Name</th>
+                    <th class="px-6 py-4 text-left border-b border-gray-200">Price</th>
+                    <th class="px-6 py-4 text-left border-b border-gray-200">Details</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100 text-gray-800">
+                @foreach (var product in Model)
+                {
+                    <tr class="hover:bg-gray-100 transition-colors duration-150 ease-in-out">
+                        <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200 text-sm font-medium">@product.Name</td>
+                        <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200 text-sm font-medium">@product.Price.ToString("C")</td>
+                        <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200 text-sm font-semibold">
+                            <a href="/products/details/@product.Id" class="text-blue-600 hover:text-blue-500 transition-colors duration-150 ease-in-out">View Details</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#dataTable').DataTable({
+                paging: true,
+                searching: true,
+                ordering: true,
+                pageLength: 10,
+                lengthMenu: [5, 10, 15, 20],
+                columnDefs: [
+                    { orderable: false, targets: -1 }
+                ],
+                language: {
+                    search: "Filter records:"
+                },
+                dom: '<"top"f>rt<"bottom"lp><"clear">'
+            });
+        });
+
+        function previewImage(event) {
+            var reader = new FileReader();
+            reader.onload = function () {
+                var output = document.getElementById('imagePreview');
+                output.src = reader.result;
+                output.style.display = 'block';
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
+}

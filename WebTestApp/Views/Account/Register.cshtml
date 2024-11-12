@@ -1,0 +1,119 @@
+﻿@model Employer
+
+@{
+    ViewData["Title"] = "Register";
+}
+<div class="flex justify-center items-center min-h-screen bg-gray-100">
+    <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
+        <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">Create an Account</h2>
+        <!-- Validation Summary -->
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+                <ul>
+                    @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                    {
+                        <li>@error.ErrorMessage</li>
+                    }
+                </ul>
+            </div>
+        }
+        <form asp-controller="Account"asp-action="Register" method="post" enctype="multipart/form-data" class="space-y-6">
+            <!-- Name Field -->
+            <div class="relative">
+                <label asp-for="UserName" class="text-sm font-medium text-gray-600"></label>
+                <div class="flex items-center bg-gray-50 rounded-md border border-gray-200 focus-within:border-blue-500">
+                    <span class="pl-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2a10 10 0 100 20 10 10 0 000-20z" />
+                        </svg>
+                    </span>
+                    <input asp-for="UserName" class="w-full p-3 bg-gray-50 focus:outline-none focus:bg-white rounded-md" placeholder="Name" />
+                </div>
+                <span asp-validation-for="UserName" class="text-red-500 text-xs"></span>
+            </div>
+
+            <!-- Email Field -->
+            <div class="relative">
+                <label asp-for="Email" class="text-sm font-medium text-gray-600"></label>
+                <div class="flex items-center bg-gray-50 rounded-md border border-gray-200 focus-within:border-blue-500">
+                    <span class="pl-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M2.4 4.5a1.5 1.5 0 011.5-1.5h16.2a1.5 1.5 0 011.5 1.5v14.4a1.5 1.5 0 01-1.5 1.5H3.9a1.5 1.5 0 01-1.5-1.5V4.5z" />
+                        </svg>
+                    </span>
+                    <input asp-for="Email" class="w-full p-3 bg-gray-50 focus:outline-none focus:bg-white rounded-md" placeholder="Email" />
+                </div>
+                <span asp-validation-for="Email" class="text-red-500 text-xs"></span>
+            </div>
+
+            <!-- Password Field -->
+            <div class="relative">
+                <label asp-for="PasswordHash" class="text-sm font-medium text-gray-600"></label>
+                <div class="flex items-center bg-gray-50 rounded-md border border-gray-200 focus-within:border-blue-500">
+                    <span class="pl-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 17c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zm-7 0h-.535A7.443 7.443 0 012 12.438C2 8.13 5.879 4.5 10.5 4.5S19 8.13 19 12.438c0 .525-.042 1.036-.128 1.536H17c0-3.037-2.308-5.5-5.5-5.5S6 10.938 6 14.125c0 .79.303 1.513.842 2.125H5z" />
+                        </svg>
+                    </span>
+                    <input asp-for="PasswordHash" class="w-full p-3 bg-gray-50 focus:outline-none focus:bg-white rounded-md" type="password" placeholder="Password" />
+                </div>
+                <span asp-validation-for="PasswordHash" class="text-red-500 text-xs"></span>
+            </div>
+
+            <!-- Address Field -->
+            <div class="relative">
+                <label asp-for="Address" class="text-sm font-medium text-gray-600"></label>
+                <input asp-for="Address" class="w-full p-3 bg-gray-50 focus:outline-none focus:bg-white rounded-md" placeholder="Address" />
+                <span asp-validation-for="Address" class="text-red-500 text-xs"></span>
+            </div>
+
+            <!-- Birthday Field -->
+            <div class="relative">
+                <label asp-for="Birthday" class="text-sm font-medium text-gray-600"></label>
+                <input asp-for="Birthday" type="date" class="w-full p-3 bg-gray-50 focus:outline-none focus:bg-white rounded-md" />
+                <span asp-validation-for="Birthday" class="text-red-500 text-xs"></span>
+            </div>
+
+            <!-- Profil Field -->
+            <div class="relative">
+                <label asp-for="Profile" class="text-sm font-medium text-gray-600"></label>
+                <textarea asp-for="Profile" class="w-full p-3 bg-gray-50 focus:outline-none focus:bg-white rounded-md"></textarea>
+                <span asp-validation-for="Profile" class="text-red-500 text-xs"></span>
+            </div>
+
+
+            <!-- Avatar Upload Field -->
+            <div class="relative">
+                <label for="Avatar" class="text-sm font-medium text-gray-600">Avatar</label>
+                <input type="file" asp-for="ClientFile" class="w-full p-3 bg-gray-50 focus:outline-none focus:bg-white rounded-md" id="avatarInput" />
+                <img id="imagePreview" src="#" alt="Image Preview" class="hidden w-40 h-40 rounded-full mx-auto mt-4" />
+                <span asp-validation-for="ClientFile" class="text-red-500 text-xs"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit" class="w-full bg-blue-500 text-white font-semibold py-2 rounded-md hover:bg-blue-600 transition duration-200">
+                    Register
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // jQuery function to preview image before upload
+        $('#avatarInput').on('change', function (event) {
+            var reader = new FileReader();
+            reader.onload = function () {
+                $('#imagePreview').attr('src', reader.result).removeClass('hidden');
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        });
+    </script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

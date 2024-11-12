@@ -1,0 +1,110 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Custom Styles and jQuery Animations -->
+<style>
+    /* Custom styles for fade-in animation */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
+<!-- Hero Section -->
+<section class="bg-gray-100 py-16 text-center fade-in" id="hero">
+    <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to WebTestApp</h1>
+        <p class="text-lg text-gray-600 mb-8">Your one-stop shop for the best electronic products</p>
+        <a href="#" class="inline-block px-8 py-3 bg-blue-600 text-white text-lg font-medium rounded-lg shadow-lg hover:bg-blue-700 transform hover:scale-105 transition duration-200">Shop Now</a>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-16 fade-in" id="services">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <!-- Service Item 1 -->
+            <div class="transform transition hover:scale-105 duration-300">
+                <i class="fas fa-shipping-fast text-blue-600 text-5xl mb-4"></i>
+                <h5 class="text-xl font-medium text-gray-800">Fast Delivery</h5>
+                <p class="text-gray-600 mt-2">Get your products delivered quickly and reliably to your doorstep.</p>
+            </div>
+            <!-- Service Item 2 -->
+            <div class="transform transition hover:scale-105 duration-300">
+                <i class="fas fa-headset text-blue-600 text-5xl mb-4"></i>
+                <h5 class="text-xl font-medium text-gray-800">24/7 Support</h5>
+                <p class="text-gray-600 mt-2">Our team is here to help you anytime you need assistance.</p>
+            </div>
+            <!-- Service Item 3 -->
+            <div class="transform transition hover:scale-105 duration-300">
+                <i class="fas fa-undo text-blue-600 text-5xl mb-4"></i>
+                <h5 class="text-xl font-medium text-gray-800">Easy Returns</h5>
+                <p class="text-gray-600 mt-2">Not satisfied with your purchase? Enjoy hassle-free returns.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Products Section -->
+<section class="bg-gray-100 py-16 fade-in" id="products">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12">Featured Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 duration-300">
+                <img src="https://via.placeholder.com/300" alt="Product Image" class="w-full h-48 object-cover">
+                <div class="p-6 text-center">
+                    <h5 class="text-xl font-medium text-gray-800">Product 1</h5>
+                    <p class="text-gray-600 mt-2">$49.99</p>
+                    <a href="#" class="inline-block mt-4 px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white transition">View Details</a>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 duration-300">
+                <img src="https://via.placeholder.com/300" alt="Product Image" class="w-full h-48 object-cover">
+                <div class="p-6 text-center">
+                    <h5 class="text-xl font-medium text-gray-800">Product 2</h5>
+                    <p class="text-gray-600 mt-2">$79.99</p>
+                    <a href="#" class="inline-block mt-4 px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white transition">View Details</a>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 duration-300">
+                <img src="https://via.placeholder.com/300" alt="Product Image" class="w-full h-48 object-cover">
+                <div class="p-6 text-center">
+                    <h5 class="text-xl font-medium text-gray-800">Product 3</h5>
+                    <p class="text-gray-600 mt-2">$99.99</p>
+                    <a href="#" class="inline-block mt-4 px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white transition">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- jQuery Script to Handle Scroll Animations -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Fade in sections when they come into view
+        $(window).on('scroll', function() {
+            $('.fade-in').each(function() {
+                var elementTop = $(this).offset().top;
+                var windowBottom = $(window).scrollTop() + $(window).height();
+
+                if (elementTop < windowBottom) {
+                    $(this).addClass('show');
+                }
+            });
+        });
+
+        // Trigger the scroll event on page load to check if sections should be visible
+        $(window).trigger('scroll');
+    });
+</script>

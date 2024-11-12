@@ -1,0 +1,98 @@
+﻿@model Employer
+
+@{
+    ViewData["Title"] = "Edit Employer";
+}
+
+<div class="container mx-auto mt-5 p-5 bg-white rounded-lg shadow-lg">
+    <h1 class="text-2xl font-semibold mb-5">Edit Employer</h1>
+
+    <form asp-action="Edit" class="space-y-4" enctype="multipart/form-data">
+        <div asp-validation-summary="All" class="text-red-500 mb-4"></div>
+        <input type="hidden" asp-for="Id" />
+
+        <!-- Row 1: Name and Email -->
+        <div class="flex space-x-4">
+            <div class="w-1/2">
+                <label asp-for="UserName" class="block text-gray-700 font-medium mb-1">Name</label>
+                <input asp-for="UserName" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <span asp-validation-for="UserName" class="text-red-500"></span>
+            </div>
+            <div class="w-1/2">
+                <label asp-for="Email" class="block text-gray-700 font-medium mb-1">Email</label>
+                <input asp-for="Email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <span asp-validation-for="Email" class="text-red-500"></span>
+            </div>
+        </div>
+
+        <!-- Row 2: Password and Phone -->
+        <div class="flex space-x-4">
+            <div class="w-1/2">
+                <label asp-for="PasswordHash" class="block text-gray-700 font-medium mb-1">Password</label>
+                <input asp-for="PasswordHash" type="password" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <span asp-validation-for="PasswordHash" class="text-red-500"></span>
+            </div>
+            <div class="w-1/2">
+                <label asp-for="PhoneNumber" class="block text-gray-700 font-medium mb-1">Phone Number</label>
+                <input asp-for="PhoneNumber" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <span asp-validation-for="PhoneNumber" class="text-red-500"></span>
+            </div>
+        </div>
+
+        <!-- Row 3: Address and Profile -->
+        <div class="flex space-x-4">
+            <div class="w-1/2">
+                <label asp-for="Address" class="block text-gray-700 font-medium mb-1">Address</label>
+                <input asp-for="Address" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <span asp-validation-for="Address" class="text-red-500"></span>
+            </div>
+            <div class="w-1/2">
+                <label asp-for="Profile" class="block text-gray-700 font-medium mb-1">Profile</label>
+                <input asp-for="Profile" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <span asp-validation-for="Profile" class="text-red-500"></span>
+            </div>
+        </div>
+
+        <!-- Row 4: Birthday -->
+        <div class="flex space-x-4">
+            <div class="w-1/2">
+                <label asp-for="Birthday" class="block text-gray-700 font-medium mb-1">Birthday</label>
+                <input asp-for="Birthday" type="date" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <span asp-validation-for="Birthday" class="text-red-500"></span>
+            </div>
+        </div>
+
+        <!-- Avatar Upload with Preview -->
+        <div class="mt-4">
+            <label for="ClientFile" class="block text-gray-700 font-medium mb-1">Avatar</label>
+            <input type="file" asp-for="ClientFile" class="w-full border border-gray-300 rounded focus:outline-none" onchange="previewImage(event)" />
+            <img id="imagePreview" src="#" alt="Image Preview" class="mt-2 w-48 rounded" style="display:none;" />
+            <span asp-validation-for="ClientFile" class="text-red-500"></span>
+        </div>
+
+        <div class="mt-6">
+            <input type="submit" value="Save" class="px-4 py-2 bg-blue-500 text-white font-semibold rounded shadow-md hover:bg-blue-600 focus:outline-none" />
+        </div>
+    </form>
+
+    <div class="mt-4">
+        <a asp-action="Index" class="text-blue-500 hover:underline">Back to List</a>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function previewImage(event) {
+            var reader = new FileReader();
+            reader.onload = function () {
+                var output = document.getElementById('imagePreview');
+                output.src = reader.result;
+                output.style.display = 'block';
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

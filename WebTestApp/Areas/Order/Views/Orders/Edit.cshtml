@@ -1,0 +1,51 @@
+﻿@model WebTestApp.Models.Order
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container mx-auto mt-5 p-5 bg-white rounded-lg shadow-lg">
+    <h1 class="text-2xl font-semibold mb-5">Edit Order</h1>
+
+    <!-- Display TempData messages -->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4">
+            <span class="block sm:inline">@TempData["SuccessMessage"]</span>
+        </div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4">
+            <span class="block sm:inline">@TempData["ErrorMessage"]</span>
+        </div>
+    }
+
+    <form asp-action="Edit" method="post" class="space-y-4">
+        <div asp-validation-summary="All" class="text-red-500"></div> <!-- Display all validation errors -->
+
+        <input type="hidden" asp-for="EmployerId" />
+        <input type="hidden" asp-for="ProductId" />
+
+        <div>
+            <label asp-for="Price" class="block text-sm font-medium text-gray-700"></label>
+            <input asp-for="Price" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500" />
+            <span asp-validation-for="Price" class="text-red-500"></span>
+        </div>
+
+        <div>
+            <label asp-for="Quantity" class="block text-sm font-medium text-gray-700"></label>
+            <input asp-for="Quantity" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500" />
+            <span asp-validation-for="Quantity" class="text-red-500"></span>
+        </div>
+
+        <div class="flex justify-between">
+            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition-all duration-300">
+                Save
+            </button>
+            <a asp-action="Index" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded transition-all duration-300">
+                Back to List
+            </a>
+        </div>
+    </form>
+</div>

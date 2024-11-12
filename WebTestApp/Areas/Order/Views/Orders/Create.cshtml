@@ -1,0 +1,58 @@
+﻿@model WebTestApp.Models.Order
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-2xl font-bold text-gray-800 mb-4 text-center">Create Order</h1>
+
+<div class="flex flex-col items-center">
+    @if (ViewData.ModelState != null && !ViewData.ModelState.IsValid)
+    {
+        <div class="bg-red-100 text-red-700 border border-red-400 px-4 py-3 rounded mb-4 w-3/4 text-center">
+            @Html.ValidationSummary()
+        </div>
+    }
+
+    <form asp-action="Create" method="post" class="w-full max-w-4xl space-y-4">
+
+        <!-- Row 1: EmployerId and ProductId -->
+        <div class="flex space-x-4">
+            <div class="w-1/2">
+                <label asp-for="EmployerId" class="block text-gray-700 font-medium mb-1"></label>
+                <select asp-for="EmployerId" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" asp-items="ViewBag.EmployerId"></select>
+            </div>
+
+            <div class="w-1/2">
+                <label asp-for="ProductId" class="block text-gray-700 font-medium mb-1"></label>
+                <select asp-for="ProductId" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" asp-items="ViewBag.ProductId"></select>
+            </div>
+        </div>
+
+        <!-- Row 2: Price and Quantity -->
+        <div class="flex space-x-4">
+            <div class="w-1/2">
+                <label asp-for="Price" class="block text-gray-700 font-medium mb-1"></label>
+                <input asp-for="Price" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <span asp-validation-for="Price" class="text-red-600 text-sm"></span>
+            </div>
+
+            <div class="w-1/2">
+                <label asp-for="Quantity" class="block text-gray-700 font-medium mb-1"></label>
+                <input asp-for="Quantity" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <span asp-validation-for="Quantity" class="text-red-600 text-sm"></span>
+            </div>
+        </div>
+
+        
+
+        <!-- Submit Button -->
+        <div class="w-full mt-6 text-center">
+            <input type="submit" value="Create" class="w-1/3 py-2 px-4 bg-blue-600 text-white font-medium rounded hover:bg-blue-700 transition duration-200 cursor-pointer" />
+        </div>
+    </form>
+
+    <div class="mt-6">
+        <a asp-action="Index" class="text-blue-600 hover:underline">Back to List</a>
+    </div>
+</div>

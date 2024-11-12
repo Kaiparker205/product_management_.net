@@ -1,0 +1,129 @@
+﻿
+    <div id="invoice" class="max-w-3xl mx-auto bg-white p-10 rounded-lg shadow-lg">
+        <div class="flex justify-between items-center mb-5">
+            <h1 class="text-3xl font-bold">Invoice</h1>
+            <div>
+                <p class="text-sm">Date: @Model.CreatedDate.ToShortDateString()</p>
+                <p class="text-sm">Invoice #: @Model.EmployerId-@Model.ProductId</p>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h2 class="text-xl font-semibold">Employer Details</h2>
+            <p>Name: @Model.Employer.Name</p>
+            <p>Email: @Model.Employer.Email</p>
+            <p>Phone: @Model.Employer.Phone</p>
+            <p>Address: @Model.Employer.Address</p>
+        </div>
+
+        <div class="mb-5">
+            <h2 class="text-xl font-semibold">Product Details</h2>
+            <p>Name: @Model.Product.Name</p>
+            <p>Description: @Model.Product.Description</p>
+            <p>Category: @Model.Product.Category</p>
+            <p>Price: $@Model.Product.Price</p>
+        </div>
+
+        <table class="min-w-full bg-white">
+            <thead>
+                <tr>
+                    <th class="py-2">Item</th>
+                    <th class="py-2">Price</th>
+                    <th class="py-2">Quantity</th>
+                    <th class="py-2">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-gray-100">
+                    <td class="py-2">@Model.Product.Name</td>
+                    <td class="py-2">$@Model.Price</td>
+                    <td class="py-2">@Model.Quantity</td>
+                    <td class="py-2">$@(Model.Price * Model.Quantity)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="flex justify-end mt-5">
+            <div class="text-right">
+                <p class="text-xl font-bold">Total: $@(Model.Price * Model.Quantity)</p>
+            </div>
+        </div>
+        <button id="generate-pdf" class="bg-blue-500 text-white py-2 px-4 rounded mt-5">
+            Generate PDF
+        </button>
+    </div>
+
+    @section Scripts {
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+        <script>
+            document.getElementById('generate-pdf').addEventListener('click', function () {
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF();
+
+                // Define the `order` object with data from Razor Model properties
+                const order = {
+                    EmployerId: "@Model.EmployerId",
+                    ProductId: "@Model.ProductId",
+                    Price: parseFloat("@Model.Price"),
+                    Quantity: parseInt("@Model.Quantity"),
+                    CreatedDate: "@Model.CreatedDate.ToShortDateString()",
+                    Employer: {
+                        Name: "@Model.Employer.Name",
+                        Email: "@Model.Employer.Email",
+                        Phone: "@Model.Employer.Phone",
+                        Address: "@Model.Employer.Address"
+                    },
+                    Product: {
+                        Name: "@Model.Product.Name",
+                        Description: "@Model.Product.Description",
+                        Category: "@Model.Product.Category",
+                        Price: parseFloat("@Model.Product.Price")
+                    }
+                };
+
+                // Title section
+                doc.setFontSize(22);
+                doc.text('Invoice', 105, 20, null, null, 'center');
+
+                // Employer details
+                doc.setFontSize(12);
+                doc.text(`Date: ${order.CreatedDate}`, 14, 30);
+                doc.text(`Invoice #: ${order.EmployerId}-${order.ProductId}`, 14, 36);
+                doc.text(`Employer: ${order.Employer.Name}`, 14, 42);
+                doc.text(`Email: ${order.Employer.Email}`, 14, 48);
+                doc.text(`Phone: ${order.Employer.Phone}`, 14, 54);
+                doc.text(`Address: ${order.Employer.Address}`, 14, 60);
+
+                // Product details
+                doc.setFontSize(16);
+                doc.text('Product Details', 14, 70);
+                doc.setFontSize(12);
+                doc.text(`Name: ${order.Product.Name}`, 14, 76);
+                doc.text(`Description: ${order.Product.Description}`, 14, 82);
+                doc.text(`Category: ${order.Product.Category}`, 14, 88);
+                doc.text(`Price: $${order.Product.Price.toFixed(2)}`, 14, 94);
+
+                // Order table headers
+                doc.setFontSize(14);
+                doc.text('Item', 14, 110);
+                doc.text('Price', 64, 110);
+                doc.text('Quantity', 114, 110);
+                doc.text('Total', 164, 110);
+
+                // Order table row
+                doc.setFontSize(12);
+                doc.text(order.Product.Name, 14, 120);
+                doc.text(`$${order.Price.toFixed(2)}`, 64, 120);
+                doc.text(order.Quantity.toString(), 114, 120);
+                doc.text(`$${(order.Price * order.Quantity).toFixed(2)}`, 164, 120);
+
+                // Total section
+                doc.setFontSize(16);
+                doc.text(`Total: $${(order.Price * order.Quantity).toFixed(2)}`, 164, 140);
+
+                // Save the PDF
+                doc.save('invoice.pdf');
+            });
+        </script>
+    }
+

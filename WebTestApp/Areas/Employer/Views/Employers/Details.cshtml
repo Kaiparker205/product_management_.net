@@ -1,0 +1,43 @@
+﻿@model WebTestApp.Models.Employer
+
+@{
+    ViewData["Title"] = "Employer Details";
+}
+
+<div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden my-8">
+    <div class="bg-gray-800 h-32"></div>
+    <div class="relative -mt-16 w-32 h-32 mx-auto rounded-full border-4 border-white overflow-hidden shadow-lg">
+        <img src="@(Model?.Avatar ?? "https://via.placeholder.com/150")" alt="Profile Picture" class="w-full h-full object-cover" />
+    </div>
+    <div class="p-6 text-center">
+        <h1 class="text-2xl font-semibold text-gray-800 mb-2">@Model.UserName</h1>
+        <p class="text-gray-500">@Model.Email</p>
+    </div>
+    <div class="px-6 py-4 border-t border-gray-200">
+        <dl class="grid grid-cols-2 gap-y-4 text-sm">
+            <dt class="font-semibold text-gray-700">Phone</dt>
+            <dd class="text-gray-900">@Model.PhoneNumber</dd>
+
+            <dt class="font-semibold text-gray-700">Address</dt>
+            <dd class="text-gray-900">@Model.Address</dd>
+
+            <dt class="font-semibold text-gray-700">Profile</dt>
+            <dd class="text-gray-900">@Model.Profile</dd>
+
+            <dt class="font-semibold text-gray-700">Birthday</dt>
+            <dd class="text-gray-900">
+                @Model.Birthday != DateTime.MinValue ? Model.Birthday.ToString("MMMM dd, yyyy") : "N/A"
+            </dd>
+
+            <dt class="font-semibold text-gray-700">Created Date</dt>
+            <dd class="text-gray-900">@Model.CreatedDate.ToString("MMMM dd, yyyy")</dd>
+
+            <dt class="font-semibold text-gray-700">Updated At</dt>
+            <dd class="text-gray-900">@Model.UpdatedAt.ToString("MMMM dd, yyyy")</dd>
+        </dl>
+    </div>
+    <div class="p-6 flex justify-around border-t border-gray-200">
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="inline-block bg-yellow-500 text-white text-sm px-4 py-2 rounded-md shadow hover:bg-yellow-600 transition duration-200">Edit</a>
+        <a asp-action="Index" class="inline-block bg-gray-500 text-white text-sm px-4 py-2 rounded-md shadow hover:bg-gray-600 transition duration-200">Back to List</a>
+    </div>
+</div>

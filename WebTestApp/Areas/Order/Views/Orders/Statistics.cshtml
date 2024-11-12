@@ -1,0 +1,115 @@
+﻿@model WebTestApp.Bl.StatisticsViewModel
+
+@{
+    ViewData["Title"] = "Order Statistics";
+}
+
+<h2 class="text-3xl font-bold mb-4">Order Statistics Dashboard</h2>
+
+<!-- Filter Form -->
+<form method="get" asp-action="Statistics" class="mb-6 flex space-x-4">
+    <div>
+        <label for="StartDate" class="block font-semibold mb-1 text-gray-700">Start Date</label>
+        <input type="date" name="startDate" asp-for="StartDate" class="w-full px-4 py-2 border rounded-md focus:ring focus:ring-blue-200">
+    </div>
+    <div>
+        <label for="EndDate" class="block font-semibold mb-1 text-gray-700">End Date</label>
+        <input type="date" name="endDate" asp-for="EndDate" class="w-full px-4 py-2 border rounded-md focus:ring focus:ring-blue-200">
+    </div>
+    <div class="flex items-end">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded shadow-lg">Filter</button>
+    </div>
+</form>
+
+<!-- Summary Metrics -->
+<div class="bg-gray-100 p-6 rounded-lg shadow-lg mb-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="text-center">
+        <h3 class="text-lg font-semibold">Total Revenue</h3>
+        <p class="text-2xl font-bold text-green-600">$@Model.TotalRevenueSum</p>
+    </div>
+    <div class="text-center">
+        <h3 class="text-lg font-semibold">Total Orders</h3>
+        <p class="text-2xl font-bold text-blue-600">@Model.TotalOrders</p>
+    </div>
+    <div class="text-center">
+        <h3 class="text-lg font-semibold">Average Order Value</h3>
+        <p class="text-2xl font-bold text-purple-600">$@Model.AverageOrderValue</p>
+    </div>
+</div>
+
+<!-- Charts Section -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div>
+        <h3 class="text-lg font-semibold mb-2">Total Revenue Over Time</h3>
+        <canvas id="revenueChart" class="w-full h-96"></canvas>
+    </div>
+    <div>
+        <h3 class="text-lg font-semibold mb-2">Total Quantity Over Time</h3>
+        <canvas id="quantityChart" class="w-full h-96"></canvas>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Data for Revenue Chart
+        const revenueLabels = @Html.Raw(Json.Serialize(Model.Labels));
+        const revenueData = @Html.Raw(Json.Serialize(Model.TotalRevenue));
+
+        // Revenue Chart
+        const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+        new Chart(revenueCtx, {
+            type: 'line',
+            data: {
+                labels: revenueLabels,
+                datasets: [{
+                    label: 'Revenue',
+                    data: revenueData,
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    fill: true,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: { beginAtZero: true }
+                },
+                plugins: {
+                    tooltip: { enabled: true },
+                    legend: { display: true, position: 'top' }
+                }
+            }
+        });
+
+        // Data for Quantity Chart
+        const quantityData = @Html.Raw(Json.Serialize(Model.TotalQuantity));
+
+        // Quantity Chart
+        const quantityCtx = document.getElementById('quantityChart').getContext('2d');
+        new Chart(quantityCtx, {
+            type: 'bar',
+            data: {
+                labels: revenueLabels,
+                datasets: [{
+                    label: 'Quantity',
+                    data: quantityData,
+                    backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: { beginAtZero: true }
+                },
+                plugins: {
+                    tooltip: { enabled: true },
+                    legend: { display: true, position: 'top' }
+                }
+            }
+        });
+    </script>
+}
