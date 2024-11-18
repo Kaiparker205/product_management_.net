@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\WebTestApp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\wwwroot\\asset\\Hero.jpg",
+      "PackagePath": "staticwebassets\\asset\\Hero.jpg"
+    },
+    {
       "Id": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\wwwroot\\avatars\\1710572498_20241106125415.webp",
       "PackagePath": "staticwebassets\\avatars\\1710572498_20241106125415.webp"
     },
@@ -43,6 +47,38 @@
     {
       "Id": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\wwwroot\\avatars\\Capture d’écran_11-11-2024_175359_localhost_20241112125737.jpeg",
       "PackagePath": "staticwebassets\\avatars\\Capture d’écran_11-11-2024_175359_localhost_20241112125737.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\wwwroot\\avatars\\Capture d’écran_11-11-2024_175359_localhost_20241113160657.jpeg",
+      "PackagePath": "staticwebassets\\avatars\\Capture d’écran_11-11-2024_175359_localhost_20241113160657.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\wwwroot\\avatars\\Capture d’écran_11-11-2024_175359_localhost_20241113160730.jpeg",
+      "PackagePath": "staticwebassets\\avatars\\Capture d’écran_11-11-2024_175359_localhost_20241113160730.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\wwwroot\\avatars\\Capture d’écran_11-11-2024_175359_localhost_20241113160806.jpeg",
+      "PackagePath": "staticwebassets\\avatars\\Capture d’écran_11-11-2024_175359_localhost_20241113160806.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\wwwroot\\avatars\\Capture d’écran_11-11-2024_175359_localhost_20241113184524.jpeg",
+      "PackagePath": "staticwebassets\\avatars\\Capture d’écran_11-11-2024_175359_localhost_20241113184524.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\wwwroot\\avatars\\Capture d’écran_11-11-2024_175359_localhost_20241113194606.jpeg",
+      "PackagePath": "staticwebassets\\avatars\\Capture d’écran_11-11-2024_175359_localhost_20241113194606.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\wwwroot\\avatars\\Capture d’écran_11-11-2024_175359_localhost_20241114153246.jpeg",
+      "PackagePath": "staticwebassets\\avatars\\Capture d’écran_11-11-2024_175359_localhost_20241114153246.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\wwwroot\\avatars\\OIP_20241117151445.jpeg",
+      "PackagePath": "staticwebassets\\avatars\\OIP_20241117151445.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\wwwroot\\avatars\\OIP_20241117151505.jpeg",
+      "PackagePath": "staticwebassets\\avatars\\OIP_20241117151505.jpeg"
     },
     {
       "Id": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\wwwroot\\css\\site.css",

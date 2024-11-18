@@ -1,7 +1,9 @@
-﻿@model WebTestApp.Models.Order
+﻿@model Order
+
 
 @{
     ViewData["Title"] = "Edit";
+    var statuses = ViewBag.OrderStatuses as IEnumerable<OrderStatus>;
 }
 
 <div class="container mx-auto mt-5 p-5 bg-white rounded-lg shadow-lg">
@@ -38,7 +40,19 @@
             <input asp-for="Quantity" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500" />
             <span asp-validation-for="Quantity" class="text-red-500"></span>
         </div>
-
+        <div>
+            <select asp-for="Status" class="form-select px-4 py-2 border rounded-md">
+                <option value="" )>
+                    All
+                </option>
+                @foreach (var status in statuses)
+                {
+                    <option value="@status" selected="@(ViewContext.HttpContext.Request.Query["Status"] == status.ToString() ? "selected" : null)">
+                        @status
+                    </option>
+                }
+            </select>
+        </div>
         <div class="flex justify-between">
             <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition-all duration-300">
                 Save

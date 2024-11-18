@@ -10,9 +10,9 @@
 
         <div class="mb-5">
             <h2 class="text-xl font-semibold">Employer Details</h2>
-            <p>Name: @Model.Employer.Name</p>
+        <p>Name: @Model.Employer.UserName</p>
             <p>Email: @Model.Employer.Email</p>
-            <p>Phone: @Model.Employer.Phone</p>
+        <p>Phone: @Model.Employer.PhoneNumber</p>
             <p>Address: @Model.Employer.Address</p>
         </div>
 
@@ -68,9 +68,9 @@
                     Quantity: parseInt("@Model.Quantity"),
                     CreatedDate: "@Model.CreatedDate.ToShortDateString()",
                     Employer: {
-                        Name: "@Model.Employer.Name",
+                    Name: "@Model.Employer.UserName",
                         Email: "@Model.Employer.Email",
-                        Phone: "@Model.Employer.Phone",
+                    Phone: "@Model.Employer.PhoneNumber",
                         Address: "@Model.Employer.Address"
                     },
                     Product: {

@@ -7,6 +7,7 @@ using WebTestApp.Repository.Base;
 namespace WebTestApp.Controllers
 {
     [Authorize]
+
     public class ProductsController : Controller
     {
         private readonly IUnitOfWork myUnit;
@@ -19,6 +20,7 @@ namespace WebTestApp.Controllers
         }
 
         // GET: Products
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             var products = await myUnit.products.FindAllAsync();

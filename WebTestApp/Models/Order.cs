@@ -3,6 +3,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebTestApp.Models
 {
+    public enum OrderStatus
+{
+    Pending,  
+    Accepted,   
+    InProgress, 
+    Delivered  
+}
+
     public class Order
     {
         // Composite primary key will be defined in DbContext
@@ -15,19 +23,27 @@ namespace WebTestApp.Models
         public double Price { get; set; }
 
         public int Quantity { get; set; }
-        [ValidateNever]
 
+        [ValidateNever]
         public DateTime CreatedDate { get; set; } = DateTime.Now;
-        [ValidateNever]
 
+        [ValidateNever]
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
-        [ValidateNever]
 
+        [ValidateNever]
         public DateTime? DeletedAt { get; set; } = null;
 
         [ValidateNever]
         public Employer Employer { get; set; }
+
         [ValidateNever]
         public Product Product { get; set; }
+
+        // Enum for Order Status
+        public OrderStatus Status { get; set; } = OrderStatus.Pending; // Default is "Pending"
+
+        // Nullable property for delivery date
+        [ValidateNever]
+        public DateTime? DateLivraison { get; set; } = null; // Default is null
     }
 }

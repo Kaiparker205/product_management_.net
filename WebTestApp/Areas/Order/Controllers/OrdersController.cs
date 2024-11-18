@@ -1,4 +1,5 @@
 ﻿using DinkToPdf.Contracts;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
@@ -7,54 +8,83 @@ using Newtonsoft.Json;
 using WebTestApp.Bl;
 using WebTestApp.Repository.Base;
 using OrderModel = WebTestApp.Models.Order;
+using EmployerModel = WebTestApp.Models.Employer;
+using WebTestApp.Models;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace WebTestApp.Areas.Order.Controllers
 {
     [Area("Order")]
+    [Authorize]
+
     public class OrdersController : Controller
     {
         private readonly IUnitOfWork myUnit;
         private readonly IConverter _converter;
         private readonly ICompositeViewEngine _viewEngine;
+        private readonly UserManager<EmployerModel> _userManager;
 
-        public OrdersController(IUnitOfWork myUnit, IConverter converter, ICompositeViewEngine viewEngine)
+        public OrdersController(IUnitOfWork myUnit, IConverter converter, ICompositeViewEngine viewEngine, UserManager<EmployerModel> userManager)
         {
             this.myUnit = myUnit;
             _converter = converter;
-            _viewEngine = viewEngine;
+            _userManager = userManager;
         }
 
         // GET: Order/Orders
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? Status)
         {
-            var orders = await myUnit.orders.FindAllAsync("Employer", "Product");
+            // Get an IQueryable collection of orders
+            var ordersQuery = myUnit.orders.Find().AsQueryable();
+
+            // Filter orders by status if provided
+            if (!string.IsNullOrEmpty(Status))
+            {
+                if (Enum.TryParse(typeof(OrderStatus), Status, true, out var parsedStatus))
+                {
+                    ordersQuery = ordersQuery.Where(o => o.Status == (OrderStatus)parsedStatus);
+                }
+                else
+                {
+                    ModelState.AddModelError("Status", "Invalid status value.");
+                    return View(new List<OrderModel>());
+                }
+            }
+
+            // Execute the query and include related entities
+            var orders = await ordersQuery.Include("Employer").Include("Product").ToListAsync();
+
+            ViewBag.OrderStatuses = Enum.GetValues(typeof(OrderStatus)).Cast<OrderStatus>();
+
             return View(orders);
         }
 
-        // GET: Order/Orders/Create
-        public IActionResult Create()
-        {
-            ViewData["EmployerId"] = new SelectList(myUnit.employers.FindAll(), "Id", "Address");
-            ViewData["ProductId"] = new SelectList(myUnit.products.FindAll(), "Id", "Category");
-            return View();
-        }
+
+
 
         // POST: Order/Orders/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("EmployerId,ProductId,Price,Quantity")] OrderModel order)
+        public async Task<IActionResult> Create([Bind("ProductId,Price,Quantity,EmployerId")] OrderModel order)
         {
             if (ModelState.IsValid)
             {
-                order.Employer = await myUnit.employers.FindByIdAsync(order.EmployerId);
+                var user = await _userManager.GetUserAsync(User);
+                if (user == null)
+                {
+                    TempData["ErrorMessage"] = "Unable to create order: User not authenticated.";
+                    return RedirectToAction("Index");
+                }
+
+                order.EmployerId = user.Id;
                 order.Product = await myUnit.products.FindByIdAsync(order.ProductId);
 
-                if (order.Employer == null || order.Product == null)
+                if (order.Product == null)
                 {
-                    ModelState.AddModelError("", "Invalid Employer or Product");
-                    TempData["ErrorMessage"] = "Failed to create order: Invalid Employer or Product.";
-                    ViewData["EmployerId"] = new SelectList(myUnit.employers.FindAll(), "Id", "Address", order.EmployerId);
-                    ViewData["ProductId"] = new SelectList(myUnit.products.FindAll(), "Id", "Category", order.ProductId);
+                    ModelState.AddModelError("", "Invalid Product.");
+                    TempData["ErrorMessage"] = "Failed to create order: Invalid Product.";
+                    ViewData["ProductId"] = new SelectList(myUnit.products.FindAll(), "Id", "Name", order.ProductId);
                     return View(order);
                 }
 
@@ -62,10 +92,9 @@ namespace WebTestApp.Areas.Order.Controllers
                 var existingOrder = (await myUnit.orders.FindAsync(e => e.EmployerId == order.EmployerId && e.ProductId == order.ProductId)).FirstOrDefault();
                 if (existingOrder != null)
                 {
-                    ModelState.AddModelError("", "An order with this Employer and Product already exists.");
+                    ModelState.AddModelError("", "An order with this Product already exists for the user.");
                     TempData["ErrorMessage"] = "Failed to create order: Duplicate order.";
-                    ViewData["EmployerId"] = new SelectList(myUnit.employers.FindAll(), "Id", "Address", order.EmployerId);
-                    ViewData["ProductId"] = new SelectList(myUnit.products.FindAll(), "Id", "Category", order.ProductId);
+                    ViewData["ProductId"] = new SelectList(myUnit.products.FindAll(), "Id", "Name", order.ProductId);
                     return View(order);
                 }
 
@@ -78,10 +107,10 @@ namespace WebTestApp.Areas.Order.Controllers
             }
 
             TempData["ErrorMessage"] = "Failed to create order. Please check the form for errors.";
-            ViewData["EmployerId"] = new SelectList(myUnit.employers.FindAll(), "Id", "Address", order.EmployerId);
-            ViewData["ProductId"] = new SelectList(myUnit.products.FindAll(), "Id", "Category", order.ProductId);
+            ViewData["ProductId"] = new SelectList(myUnit.products.FindAll(), "Id", "Name", order.ProductId);
             return View(order);
         }
+
 
         // GET: Order/Orders/Edit/5
         public async Task<IActionResult> Edit(string? idEmp, int? idPr)
@@ -96,7 +125,7 @@ namespace WebTestApp.Areas.Order.Controllers
             {
                 return NotFound();
             }
-
+            ViewBag.OrderStatuses = Enum.GetValues(typeof(OrderStatus)).Cast<OrderStatus>();
             ViewData["EmployerId"] = new SelectList(myUnit.employers.FindAll(), "Id", "Address", order.EmployerId);
             ViewData["ProductId"] = new SelectList(myUnit.products.FindAll(), "Id", "Category", order.ProductId);
             return View(order);
@@ -105,7 +134,7 @@ namespace WebTestApp.Areas.Order.Controllers
         // POST: Order/Orders/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit([Bind("EmployerId,ProductId,Price,Quantity,CreatedDate,UpdatedAt,DeletedAt")] OrderModel order)
+        public async Task<IActionResult> Edit([Bind("EmployerId,ProductId,Price,Quantity,CreatedDate,UpdatedAt,DeletedAt,Status")] OrderModel order)
         {
             if (order.EmployerId == null || order.ProductId == null)
             {
@@ -121,18 +150,19 @@ namespace WebTestApp.Areas.Order.Controllers
                     TempData["ErrorMessage"] = "Order does not exist.";
                     return NotFound();
                 }
-
+                
                 existingOrder.Price = order.Price;
                 existingOrder.Quantity = order.Quantity;
                 existingOrder.UpdatedAt = DateTime.Now;
+                existingOrder.Status = order.Status;
 
                 await myUnit.orders.UpdateOneAsync(existingOrder);
                 TempData["SuccessMessage"] = "Order updated successfully.";
                 return RedirectToAction(nameof(Index));
             }
-
-            ViewData["EmployerId"] = new SelectList(myUnit.employers.FindAll(), "Id", "Address", order.EmployerId);
-            ViewData["ProductId"] = new SelectList(myUnit.products.FindAll(), "Id", "Category", order.ProductId);
+            ViewBag.OrderStatuses = Enum.GetValues(typeof(OrderStatus)).Cast<OrderStatus>();
+            ViewData["EmployerId"] = new SelectList(myUnit.employers.FindAll(), "Id", "UserName", order.EmployerId);
+            ViewData["ProductId"] = new SelectList(myUnit.products.FindAll(), "Id", "Name", order.ProductId);
             return View(order);
         }
 

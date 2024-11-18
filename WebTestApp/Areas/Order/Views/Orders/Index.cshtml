@@ -1,8 +1,10 @@
 ﻿@model IEnumerable<Order>
 @using Newtonsoft.Json
+@using WebTestApp.Models
 
 @{
-    ViewData["Title"] = "Order Index";
+    ViewData["Title"] = "Order";
+    var statuses = ViewBag.OrderStatuses as IEnumerable<OrderStatus>;
     int index = 1;
 }
 
@@ -33,18 +35,39 @@
     <a asp-action="Create" class="inline-block bg-blue-500 text-white py-2 px-4 rounded-md shadow hover:bg-blue-600 transition">Create New</a>
 </div>
 
+<!-- Filter Form -->
+<form method="get" class="mb-6 flex items-center gap-4">
+    <label for="Status" class="font-medium">Filter by Status:</label>
+    <select name="Status" class="form-select px-4 py-2 border rounded-md">
+    <option value="")>
+        All
+    </option>
+    @foreach (var status in statuses)
+    {
+        <option value="@status" selected="@(ViewContext.HttpContext.Request.Query["Status"] == status.ToString() ? "selected" : null)">
+            @status
+        </option>
+    }
+</select>
+
+
+    <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
+        Apply Filter
+    </button>
+</form>
+
 <div class="overflow-x-auto">
     <table id="orderDataTable" class="min-w-full bg-white border border-gray-200 rounded-lg shadow-sm">
         <thead>
             <tr class="bg-gray-800 text-white text-left">
                 <th class="py-3 px-6">#</th>
+                <th class="py-3 px-6">Employer</th>
+                <th class="py-3 px-6">Product</th>
                 <th class="py-3 px-6">Price</th>
                 <th class="py-3 px-6">Quantity</th>
                 <th class="py-3 px-6">Total</th>
-                <th class="py-3 px-6">Range</th>
+                <th class="py-3 px-6">Status</th>
                 <th class="py-3 px-6">Order Date</th>
-                <th class="py-3 px-6">Employer</th>
-                <th class="py-3 px-6">Product</th>
                 <th class="py-3 px-6 text-center">Actions</th>
             </tr>
         </thead>
@@ -58,22 +81,16 @@
                     > 100 and <= 500 => "bg-yellow-500 text-gray-900 px-2 py-1 rounded",
                     _ => "bg-red-500 text-white px-2 py-1 rounded"
                 };
-                var range = total switch
-                {
-                    <= 100 => "Low",
-                    > 100 and <= 500 => "Medium",
-                    _ => "High"
-                };
 
                 <tr class="border-b border-gray-200 hover:bg-gray-50">
                     <td class="py-3 px-6">@index</td>
+                    <td class="py-3 px-6">@Html.DisplayFor(modelItem => item.Employer.UserName)</td>
+                    <td class="py-3 px-6">@Html.DisplayFor(modelItem => item.Product.Name)</td>
                     <td class="py-3 px-6">@Html.DisplayFor(modelItem => item.Price) Dh</td>
                     <td class="py-3 px-6">@Html.DisplayFor(modelItem => item.Quantity)</td>
                     <td class="py-3 px-6">@total Dh</td>
-                    <td class="py-3 px-6"><span class="@rangeBadgeClass">@range</span></td>
+                    <td class="py-3 px-6"><span class="@rangeBadgeClass">@item.Status</span></td>
                     <td class="py-3 px-6">@Html.DisplayFor(modelItem => item.CreatedDate)</td>
-                    <td class="py-3 px-6">@Html.DisplayFor(modelItem => item.Employer.Address)</td>
-                    <td class="py-3 px-6">@Html.DisplayFor(modelItem => item.Product.Category)</td>
                     <td class="py-3 px-6 text-center">
                         <a asp-action="Edit" asp-route-idPr="@item.ProductId" asp-route-idEmp="@item.EmployerId" class="text-yellow-500 hover:text-yellow-600 mx-1">
                             <i class="fas fa-edit"></i> Edit
@@ -99,8 +116,6 @@
         </tbody>
     </table>
 </div>
-
-
 
 @section Scripts {
     <script>

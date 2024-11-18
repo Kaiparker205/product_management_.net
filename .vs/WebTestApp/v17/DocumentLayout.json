@@ -3,128 +3,124 @@
   "WorkspaceRootPath": "C:\\Users\\jose\\source\\repos\\WebTestApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Migrations\\20241112113413_fisrt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebTestApp\\Migrations\\20241112113413_fisrt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\bl\\employerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\bl\\employerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\employer\\views\\employers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\employer\\views\\employers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\account\\adminlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\account\\adminlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\bl\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\bl\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\employer\\views\\employers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\employer\\views\\employers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\employer\\views\\employers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\employer\\views\\employers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\employer\\views\\employers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\employer\\views\\employers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\employer\\controllers\\employerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\employer\\controllers\\employerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\models\\employer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\models\\employer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\data\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\data\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\order\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\order\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\attributes\\validateoncreateattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\attributes\\validateoncreateattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\bl\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\bl\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\employer\\views\\employers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\employer\\views\\employers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\models\\clsemailconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\models\\clsemailconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Migrations\\20241111141350_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebTestApp\\Migrations\\20241111141350_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\order\\views\\orders\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\order\\views\\orders\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\employer\\controllers\\employerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\employer\\controllers\\employerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\order\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\order\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\repository\\mainrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\repository\\mainrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\models\\employer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\models\\employer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\repository\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\repository\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\order\\views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\order\\views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\bl\\statisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\bl\\statisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\order\\views\\orders\\pdf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\order\\views\\orders\\pdf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Migrations\\20241111141350_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebTestApp\\Migrations\\20241111141350_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\migrations\\20241115093928_updorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\migrations\\20241115093928_updorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\bl\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\bl\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\bl\\editprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\bl\\editprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\migrations\\20241112113413_fisrt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\migrations\\20241112113413_fisrt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\account\\adminlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\account\\adminlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -135,24 +131,20 @@
       "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\order\\views\\orders\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\order\\views\\orders\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\bl\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\bl\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\repository\\base\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\repository\\base\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\bl\\employerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\bl\\employerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\bl\\statisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\bl\\statisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -183,44 +175,12 @@
       "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\identity\\pages\\account\\_statusmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\order\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\order\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\webtestapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\webtestapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\order\\views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\order\\views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\order\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\order\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\attributes\\validateoncreateattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\attributes\\validateoncreateattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\shared\\_dynamictable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\shared\\_dynamictable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\order\\views\\orders\\pdf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\order\\views\\orders\\pdf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -231,34 +191,164 @@
       "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\employer\\views\\employers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\employer\\views\\employers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\employer\\views\\employers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\employer\\views\\employers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\areas\\employer\\views\\employers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\areas\\employer\\views\\employers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\wwwroot\\images\\img_3760.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\wwwroot\\images\\img_3760.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\models\\clsemailconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\models\\clsemailconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\repository\\mainrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\repository\\mainrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\repository\\base\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\repository\\base\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\repository\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\repository\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\data\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\data\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|c:\\users\\jose\\source\\repos\\webtestapp\\webtestapp\\webtestapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A5F6775D-0C07-443D-81B9-43322FA5AF6F}|WebTestApp\\WebTestApp.csproj|solutionrelative:webtestapp\\webtestapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 105,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 49,
+          "SelectedChildIndex": 43,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Bl\\HomeViewModel.cs",
+              "RelativeDocumentMoniker": "WebTestApp\\Bl\\HomeViewModel.cs",
+              "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Bl\\HomeViewModel.cs",
+              "RelativeToolTip": "WebTestApp\\Bl\\HomeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T22:27:12.318Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 21,
+              "Title": "20241115093928_updOrder.cs",
+              "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Migrations\\20241115093928_updOrder.cs",
+              "RelativeDocumentMoniker": "WebTestApp\\Migrations\\20241115093928_updOrder.cs",
+              "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Migrations\\20241115093928_updOrder.cs",
+              "RelativeToolTip": "WebTestApp\\Migrations\\20241115093928_updOrder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T09:39:29.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ChangePasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Bl\\ChangePasswordViewModel.cs",
+              "RelativeDocumentMoniker": "WebTestApp\\Bl\\ChangePasswordViewModel.cs",
+              "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Bl\\ChangePasswordViewModel.cs",
+              "RelativeToolTip": "WebTestApp\\Bl\\ChangePasswordViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAADpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T17:44:27.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EditProfileViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Bl\\EditProfileViewModel.cs",
+              "RelativeDocumentMoniker": "WebTestApp\\Bl\\EditProfileViewModel.cs",
+              "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Bl\\EditProfileViewModel.cs",
+              "RelativeToolTip": "WebTestApp\\Bl\\EditProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T14:06:08.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "WebTestApp\\Views\\Account\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "WebTestApp\\Views\\Account\\Profile.cshtml",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAAGAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T13:53:38.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "WebTestApp\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "WebTestApp\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAuwA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T14:38:55.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "20241112113413_fisrt.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Migrations\\20241112113413_fisrt.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Migrations\\20241112113413_fisrt.cs",
@@ -266,12 +356,11 @@
               "RelativeToolTip": "WebTestApp\\Migrations\\20241112113413_fisrt.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T11:34:13.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T11:34:13.748Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 20,
               "Title": "20241111141350_test.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Migrations\\20241111141350_test.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Migrations\\20241111141350_test.cs",
@@ -283,33 +372,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 26,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Views\\Account\\Register.cshtml",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Account\\Register.cshtml",
               "RelativeToolTip": "WebTestApp\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAABAAAAAAAAAAAAAuwBoAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAuwHMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-09T22:24:23.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T22:24:23.372Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 27,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Views\\Account\\Login.cshtml",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "WebTestApp\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-09T22:23:58.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T22:23:58.863Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 28,
               "Title": "AdminLogin.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Account\\AdminLogin.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Views\\Account\\AdminLogin.cshtml",
@@ -317,12 +404,11 @@
               "RelativeToolTip": "WebTestApp\\Views\\Account\\AdminLogin.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-09T22:21:28.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T22:21:28.757Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 29,
               "Title": "Admin.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Models\\Admin.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Models\\Admin.cs",
@@ -330,12 +416,11 @@
               "RelativeToolTip": "WebTestApp\\Models\\Admin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T21:50:02.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T21:50:02.196Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
@@ -347,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
@@ -359,20 +444,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 32,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Bl\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Bl\\LoginViewModel.cs",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Bl\\LoginViewModel.cs",
               "RelativeToolTip": "WebTestApp\\Bl\\LoginViewModel.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAYwBIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAYwA8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T20:10:34.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T20:10:34.226Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 33,
               "Title": "EmployerViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Bl\\EmployerViewModel.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Bl\\EmployerViewModel.cs",
@@ -380,37 +464,36 @@
               "RelativeToolTip": "WebTestApp\\Bl\\EmployerViewModel.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAYwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T20:08:53.167Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T20:08:53.167Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 34,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Controllers\\AccountController.cs",
               "RelativeToolTip": "WebTestApp\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T19:57:48.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T19:57:48.572Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 10,
               "Title": "Statistics.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Order\\Views\\Orders\\Statistics.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Order\\Views\\Orders\\Statistics.cshtml",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Order\\Views\\Orders\\Statistics.cshtml",
               "RelativeToolTip": "WebTestApp\\Areas\\Order\\Views\\Orders\\Statistics.cshtml",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T16:59:32.017Z"
+              "WhenOpened": "2024-11-08T16:59:32.017Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 35,
               "Title": "StatisticsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Bl\\StatisticsViewModel.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Bl\\StatisticsViewModel.cs",
@@ -422,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 36,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
@@ -434,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 37,
               "Title": "ResetPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
@@ -446,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 38,
               "Title": "PersonalData.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
@@ -458,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 39,
               "Title": "ManageNavPages.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
@@ -470,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 40,
               "Title": "DownloadPersonalData.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
@@ -482,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 41,
               "Title": "ConfirmEmail.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
@@ -494,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 42,
               "Title": "_StatusMessage.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
@@ -506,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 43,
               "Title": "ValidateOnCreateAttribute.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Attributes\\ValidateOnCreateAttribute.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Attributes\\ValidateOnCreateAttribute.cs",
@@ -518,19 +601,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 16,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Order\\Views\\Orders\\Edit.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Order\\Views\\Orders\\Edit.cshtml",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Order\\Views\\Orders\\Edit.cshtml",
               "RelativeToolTip": "WebTestApp\\Areas\\Order\\Views\\Orders\\Edit.cshtml",
-              "ViewState": "AgIAACUAAAAAAAAAAAAuwDEAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-05T14:39:06.361Z"
+              "WhenOpened": "2024-11-05T14:39:06.361Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 44,
               "Title": "_DynamicTable.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Shared\\_DynamicTable.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Views\\Shared\\_DynamicTable.cshtml",
@@ -542,7 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 1,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Views\\Home\\Privacy.cshtml",
@@ -550,59 +634,51 @@
               "RelativeToolTip": "WebTestApp\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-01T17:15:14.299Z"
+              "WhenOpened": "2024-11-01T17:15:14.299Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 17,
               "Title": "Pdf.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Order\\Views\\Orders\\Pdf.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Order\\Views\\Orders\\Pdf.cshtml",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Order\\Views\\Orders\\Pdf.cshtml",
               "RelativeToolTip": "WebTestApp\\Areas\\Order\\Views\\Orders\\Pdf.cshtml",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAwwIAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-01T17:04:45.927Z"
+              "WhenOpened": "2024-11-01T17:04:45.927Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Order\\Views\\Orders\\Index.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Order\\Views\\Orders\\Index.cshtml",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Order\\Views\\Orders\\Index.cshtml",
               "RelativeToolTip": "WebTestApp\\Areas\\Order\\Views\\Orders\\Index.cshtml",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAACYAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-30T22:53:02.696Z"
+              "WhenOpened": "2024-10-30T22:53:02.696Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Order\\Views\\Orders\\Create.cshtml",
-              "RelativeDocumentMoniker": "WebTestApp\\Areas\\Order\\Views\\Orders\\Create.cshtml",
-              "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Order\\Views\\Orders\\Create.cshtml",
-              "RelativeToolTip": "WebTestApp\\Areas\\Order\\Views\\Orders\\Create.cshtml",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAB0AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-30T22:33:58.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 9,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "WebTestApp\\Areas\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAmwLIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-30T21:14:00.933Z"
+              "WhenOpened": "2024-10-30T21:14:00.933Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 45,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\_ViewImports.cshtml",
@@ -614,20 +690,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Employer\\Views\\Employers\\Details.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Employer\\Views\\Employers\\Details.cshtml",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Employer\\Views\\Employers\\Details.cshtml",
               "RelativeToolTip": "WebTestApp\\Areas\\Employer\\Views\\Employers\\Details.cshtml",
-              "ViewState": "AgIAABMAAAAAAAAAAADgvxgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-28T15:21:52.228Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 46,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\_ViewStart.cshtml",
@@ -639,32 +715,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 12,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Order\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Order\\Controllers\\OrdersController.cs",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Order\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "WebTestApp\\Areas\\Order\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAArwFYAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T20:02:27.809Z"
+              "WhenOpened": "2024-10-30T20:02:27.809Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Models\\Order.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Models\\Order.cs",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Models\\Order.cs",
               "RelativeToolTip": "WebTestApp\\Models\\Order.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAwCEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T19:44:08.711Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 47,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Employer\\Views\\Employers\\Edit.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Employer\\Views\\Employers\\Edit.cshtml",
@@ -672,12 +749,11 @@
               "RelativeToolTip": "WebTestApp\\Areas\\Employer\\Views\\Employers\\Edit.cshtml",
               "ViewState": "AgIAACMAAAAAAAAAAAAAADEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T15:20:54.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T15:20:54.556Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 48,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Employer\\Views\\Employers\\Create.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Employer\\Views\\Employers\\Create.cshtml",
@@ -685,12 +761,11 @@
               "RelativeToolTip": "WebTestApp\\Areas\\Employer\\Views\\Employers\\Create.cshtml",
               "ViewState": "AgIAADsAAAAAAAAAAAAAABsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T15:19:29.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T15:19:29.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 49,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Employer\\Views\\Employers\\Index.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Employer\\Views\\Employers\\Index.cshtml",
@@ -698,12 +773,11 @@
               "RelativeToolTip": "WebTestApp\\Areas\\Employer\\Views\\Employers\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T15:17:58.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T15:17:58.151Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 50,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Products\\Create.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Views\\Products\\Create.cshtml",
@@ -715,7 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 51,
               "Title": "IMG_3760.JPG - Bitmap [600x600, 24 bits, JPG]",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\wwwroot\\images\\IMG_3760.JPG",
               "RelativeDocumentMoniker": "WebTestApp\\wwwroot\\images\\IMG_3760.JPG",
@@ -727,19 +801,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "WebTestApp\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAgwG4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAgwEAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T12:46:39.091Z"
+              "WhenOpened": "2024-10-28T12:46:39.091Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 52,
               "Title": "ClsEmailConfirm.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Models\\ClsEmailConfirm.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Models\\ClsEmailConfirm.cs",
@@ -751,7 +826,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 53,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "WebTestApp\\ScaffoldingReadMe.txt",
@@ -763,7 +838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 54,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Repository\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Repository\\UnitOfWork.cs",
@@ -775,7 +850,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 55,
               "Title": "MainRepository.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Repository\\MainRepository.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Repository\\MainRepository.cs",
@@ -787,7 +862,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 56,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Repository\\Base\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Repository\\Base\\IUnitOfWork.cs",
@@ -799,7 +874,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 57,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Repository\\Base\\IRepository.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Repository\\Base\\IRepository.cs",
@@ -811,13 +886,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 11,
               "Title": "EmployersController.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Employer\\Controllers\\EmployersController.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Areas\\Employer\\Controllers\\EmployersController.cs",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Areas\\Employer\\Controllers\\EmployersController.cs",
               "RelativeToolTip": "WebTestApp\\Areas\\Employer\\Controllers\\EmployersController.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGMAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T21:08:04.833Z",
               "EditorCaption": ""
@@ -830,89 +905,89 @@
               "RelativeDocumentMoniker": "WebTestApp\\Models\\Employer.cs",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Models\\Employer.cs",
               "RelativeToolTip": "WebTestApp\\Models\\Employer.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAwCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAywCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T20:13:18.057Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 58,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Products\\Details.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Views\\Products\\Details.cshtml",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Products\\Details.cshtml",
               "RelativeToolTip": "WebTestApp\\Views\\Products\\Details.cshtml",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAAAFAAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-21T20:08:06.036Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "WebTestApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAAAEwAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAE0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-20T08:33:36.98Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 59,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Views\\_ViewStart.cshtml",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\_ViewStart.cshtml",
               "RelativeToolTip": "WebTestApp\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-20T08:33:17.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T08:33:17.617Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 60,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Views\\_ViewImports.cshtml",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "WebTestApp\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-20T08:33:14.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T08:33:14.321Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Controllers\\HomeController.cs",
               "RelativeToolTip": "WebTestApp\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T10:14:49.741Z"
+              "WhenOpened": "2024-10-19T10:14:49.741Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Products\\Index.cshtml",
               "RelativeDocumentMoniker": "WebTestApp\\Views\\Products\\Index.cshtml",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Views\\Products\\Index.cshtml",
               "RelativeToolTip": "WebTestApp\\Views\\Products\\Index.cshtml",
-              "ViewState": "AgIAACMAAAAAAAAAAAAgwEUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-19T10:11:33.239Z"
+              "WhenOpened": "2024-10-19T10:11:33.239Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 61,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Models\\ErrorViewModel.cs",
@@ -920,12 +995,11 @@
               "RelativeToolTip": "WebTestApp\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T10:09:15.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T10:09:15.306Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 62,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\appsettings.json",
               "RelativeDocumentMoniker": "WebTestApp\\appsettings.json",
@@ -937,43 +1011,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 13,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "WebTestApp\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAswH8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T09:22:54.42Z"
+              "WhenOpened": "2024-10-19T09:22:54.42Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Program.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Program.cs",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Program.cs",
               "RelativeToolTip": "WebTestApp\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAhwBAAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T08:49:36.989Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 63,
               "Title": "ProductContext.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Data\\ProductContext.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Data\\ProductContext.cs",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Data\\ProductContext.cs",
               "RelativeToolTip": "WebTestApp\\Data\\ProductContext.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAYAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswBIAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T08:47:18.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 64,
               "Title": "WebTestApp.csproj",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\WebTestApp.csproj",
               "RelativeDocumentMoniker": "WebTestApp\\WebTestApp.csproj",
@@ -985,15 +1060,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 14,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Models\\Product.cs",
               "RelativeDocumentMoniker": "WebTestApp\\Models\\Product.cs",
               "ToolTip": "C:\\Users\\jose\\source\\repos\\WebTestApp\\WebTestApp\\Models\\Product.cs",
               "RelativeToolTip": "WebTestApp\\Models\\Product.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T08:41:39.565Z"
+              "WhenOpened": "2024-10-19T08:41:39.565Z",
+              "EditorCaption": ""
             }
           ]
         }

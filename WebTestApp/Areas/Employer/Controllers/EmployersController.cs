@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebTestApp.Repository.Base;
 using EmployerModel = WebTestApp.Models.Employer;
@@ -7,6 +8,8 @@ using EmployerModel = WebTestApp.Models.Employer;
 namespace WebTestApp.Areas.Employer.Controllers
 {
     [Area("Employer")]
+    [Authorize]
+
     public class EmployersController : Controller
     {
         private readonly IUnitOfWork myUnit;

@@ -1,0 +1,146 @@
+﻿@model EditProfileViewModel
+
+@{
+    ViewData["Title"] = "Dashboard - Profile";
+}
+
+<div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <div class="bg-gray-800 text-white w-64 p-6">
+        <h2 class="text-2xl font-bold mb-8">Profile Dashboard</h2>
+        <ul class="space-y-4">
+            <li>
+                <button id="showProfile" class="flex items-center space-x-2 w-full text-left hover:bg-gray-700 p-2 rounded-lg">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 13.879A3 3 0 0112 21a3 3 0 016.879-6.121M12 7a4 4 0 110-8 4 4 0 010 8z" />
+                    </svg>
+                    <span>Profile</span>
+                </button>
+            </li>
+            <li>
+                <button id="showEditProfile" class="flex items-center space-x-2 w-full text-left hover:bg-gray-700 p-2 rounded-lg">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12h4.586a1 1 0 01.707 1.707l-9.586 9.586a1 1 0 01-1.414 0L3.707 17.707a1 1 0 010-1.414l9.586-9.586a1 1 0 011.414 0L20.586 9a1 1 0 010 1.414L15 12z" />
+                    </svg>
+                    <span>Edit Profile</span>
+                </button>
+            </li>
+            <li>
+                <button id="showChangePassword" class="flex items-center space-x-2 w-full text-left hover:bg-gray-700 p-2 rounded-lg">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v7M12 9a4 4 0 110-8 4 4 0 010 8zm6 10v1H6v-1a4 4 0 0110-1v1zm-6-7v4" />
+                    </svg>
+                    <span>Change Password</span>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-8 bg-gray-100">
+        <!-- Profile Section -->
+        <div id="profileSection" class="bg-white rounded-lg shadow-md p-6 max-w-2xl mx-auto">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">Profile Details</h2>
+            <p><strong>Username:</strong> @Model.UserName</p>
+            <p><strong>Email:</strong> @Model.Email</p>
+            <p><strong>Address:</strong> @Model.Address</p>
+            <p><strong>Birthday:</strong> @Model.Birthday?.ToString("yyyy-MM-dd")</p>
+            <hr class="my-4" />
+            <button onclick="openDeleteModal()" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">Delete Account</button>
+        </div>
+
+        <!-- Edit Profile Section -->
+        <form id="editProfileSection" class="hidden bg-white rounded-lg shadow-md p-6 max-w-2xl mx-auto" asp-action="EditProfile" method="post">
+            @Html.AntiForgeryToken()
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">Edit Profile</h2>
+            <div class="space-y-4">
+                <div>
+                    <label>Username:</label>
+                    <input type="text" name="UserName" class="border p-1 rounded w-full" value="@Model.UserName" />
+                </div>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" name="Email" class="border p-1 rounded w-full" value="@Model.Email" />
+                </div>
+                <div>
+                    <label>Address:</label>
+                    <input type="text" name="Address" class="border p-1 rounded w-full" value="@Model.Address" />
+                </div>
+                <div>
+                    <label>Birthday:</label>
+                    <input type="date" name="Birthday" class="border p-1 rounded w-full" value="@Model.Birthday?.ToString("yyyy-MM-dd")" />
+                </div>
+            </div>
+            <button type="submit" class="mt-6 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">Save Changes</button>
+        </form>
+
+        <!-- Change Password Section -->
+        <form id="changePasswordSection" class="hidden bg-white rounded-lg shadow-md p-6 max-w-2xl mx-auto" asp-action="ChangePassword" method="post">
+            @Html.AntiForgeryToken()
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">Change Password</h2>
+            <div class="space-y-4">
+                <div>
+                    <label>Current Password:</label>
+                    <input type="password" name="CurrentPassword" class="border p-1 rounded w-full" required />
+                </div>
+                <div>
+                    <label>New Password:</label>
+                    <input type="password" name="NewPassword" class="border p-1 rounded w-full" required />
+                </div>
+                <div>
+                    <label>Confirm New Password:</label>
+                    <input type="password" name="ConfirmNewPassword" class="border p-1 rounded w-full" required />
+                </div>
+            </div>
+            <button type="submit" class="mt-6 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Change Password</button>
+        </form>
+    </div>
+</div>
+
+<!-- Modal for Delete Confirmation -->
+<div id="deleteModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center z-50">
+    <div class="bg-white rounded-lg shadow-lg p-8 max-w-lg w-full text-center">
+        <h2 class="text-2xl font-semibold mb-4 text-red-600">Delete Profile</h2>
+        <p class="text-gray-700">Are you sure you want to delete your profile? This action cannot be undone.</p>
+        <div class="mt-6 flex justify-center">
+            <form asp-action="DeleteProfile" method="post">
+                @Html.AntiForgeryToken()
+                <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">Confirm Delete</button>
+            </form>
+            <button onclick="closeDeleteModal()" class="ml-4 bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600">Cancel</button>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Show Profile Section
+            $("#showProfile").click(function () {
+                $("#profileSection").show();
+                $("#editProfileSection, #changePasswordSection").hide();
+            });
+
+            // Show Edit Profile Section
+            $("#showEditProfile").click(function () {
+                $("#editProfileSection").show();
+                $("#profileSection, #changePasswordSection").hide();
+            });
+
+            // Show Change Password Section
+            $("#showChangePassword").click(function () {
+                $("#changePasswordSection").show();
+                $("#profileSection, #editProfileSection").hide();
+            });
+        });
+
+        function openDeleteModal() {
+            $("#deleteModal").removeClass("hidden");
+        }
+
+        function closeDeleteModal() {
+            $("#deleteModal").addClass("hidden");
+        }
+    </script>
+}

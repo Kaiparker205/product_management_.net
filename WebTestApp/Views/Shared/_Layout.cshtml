@@ -4,15 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebTestApp</title>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebTestApp.styles.css" asp-append-version="true" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-
-
-    <!-- DataTables CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
@@ -34,54 +33,91 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <!-- Left-side Links -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="Index">
-                                <i class="fas fa-shopping-cart me-2"></i> Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark d-flex align-items-center" asp-area="Order" asp-controller="Orders" asp-action="Index">
-                                <i class="fas fa-box me-2"></i> Orders
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark d-flex align-items-center" asp-area="Employer" asp-controller="Employers" asp-action="Index">
-                                <i class="fas fa-users me-2"></i> Employers
-                            </a>
-                        </li>
+                    
                         <li class="nav-item">
                             <a class="nav-link text-dark d-flex align-items-center" asp-area="" asp-controller="Products" asp-action="Index">
                                 <i class="fas fa-boxes me-2"></i> Products
                             </a>
                         </li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark d-flex align-items-center" asp-area="Employer" asp-controller="Employers" asp-action="Index">
+                                    <i class="fas fa-users me-2"></i> Employers
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark d-flex align-items-center"
+                                   href="#"
+                                   id="ordersDropdown"
+                                   role="button"
+                                   data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    <i class="fas fa-box me-2"></i> Orders
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="ordersDropdown">
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center"
+                                           asp-area="Order"
+                                           asp-controller="Orders"
+                                           asp-action="Index">
+                                            <i class="fas fa-list me-2"></i> All Orders
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center"
+                                           asp-area="Order"
+                                           asp-controller="Orders"
+                                           asp-action="Statistics">
+                                            <i class="fas fa-chart-bar me-2"></i> Statistics
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        }
                     </ul>
 
                     <!-- Right-side Links -->
                     <ul class="navbar-nav">
                         @if (User.Identity.IsAuthenticated)
                         {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark d-flex align-items-center" href="#">
-                                    <i class="fas fa-user-circle me-2 text-primary"></i> Hello, @User.Identity.Name
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center text-dark hover:text-primary transition"
+                                   href="#"
+                                   id="userDropdown"
+                                   role="button"
+                                   data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    @User.Identity.Name
                                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <form asp-area="Identity" asp-page="/Account/Logout" method="post" class="d-flex align-items-center">
-                                    <button type="submit" class="nav-link btn btn-link text-dark">
-                                        <i class="fas fa-sign-out-alt me-2 text-danger"></i> Logout
-                                    </button>
-                                </form>
+                                <ul class="dropdown-menu dropdown-menu-end animate-slide-down" aria-labelledby="userDropdown">
+                                    <li>
+                                        <a class="dropdown-item hover:bg-gray-100 transition" asp-controller="Account" asp-action="Profile">
+                                            <i class="fas fa-user me-2"></i> Profile
+                                        </a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <form asp-controller="Account" asp-action="Logout" method="post">
+                                            <button type="submit" class="dropdown-item text-danger hover:bg-gray-100 transition">
+                                                <i class="fas fa-sign-out-alt me-2"></i> Logout
+                                            </button>
+                                        </form>
+                                    </li>
+                                </ul>
                             </li>
                         }
                         else
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark d-flex align-items-center" asp-area="Identity" asp-page="/Account/Login">
+                                <a class="nav-link text-dark d-flex align-items-center hover:text-primary transition" asp-controller="Account" asp-action="Login">
                                     <i class="fas fa-sign-in-alt me-2 text-primary"></i> Login
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark d-flex align-items-center" asp-controller="Account"asp-action="Register" >
+                                <a class="nav-link text-dark d-flex align-items-center hover:text-success transition" asp-controller="Account" asp-action="Register">
                                     <i class="fas fa-user-plus me-2 text-success"></i> Register
                                 </a>
                             </li>
@@ -91,32 +127,38 @@
             </div>
         </nav>
     </header>
+
+    <!-- Main Content -->
     <div class="container">
+        <!-- Toast Notifications -->
         <div aria-live="polite" aria-atomic="true" class="position-relative" style="z-index: 9999;">
             <div class="toast-container position-fixed top-0 end-0 p-3">
-                <div id="successToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
-                    <div class="d-flex">
-                        <div class="toast-body">
-                            @TempData["SuccessMessage"]
-                        </div>
-                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                </div>
-                <div id="errorToast" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
-                    <div class="d-flex">
-                        <div class="toast-body">
-                            @TempData["ErrorMessage"]
-                        </div>
-                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                </div>
+                @if (TempData["SuccessMessage"] != null || TempData["ErrorMessage"] != null)
+                {
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                            Toastify({
+                                text: "@TempData["SuccessMessage"] ?? @TempData["ErrorMessage"]",
+                                duration: 3000,
+                                close: true,
+                                gravity: "top",
+                                position: "right",
+                                backgroundColor: "@(TempData["SuccessMessage"] != null ? "#4CAF50" : "#f44336")",
+                                stopOnFocus: true,
+                            }).showToast();
+                        });
+                    </script>
+                }
             </div>
         </div>
 
+        <!-- Main Body -->
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
+
+    <!-- Footer -->
     <footer class="bg-gray-900 text-white border-t">
         <div class="container mx-auto py-6 flex flex-col items-center">
             <div class="flex items-center text-lg font-semibold">
@@ -129,50 +171,12 @@
         </div>
     </footer>
 
-
+    <!-- Scripts -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Display success toast if TempData["SuccessMessage"] exists
-        @if (TempData["SuccessMessage"] != null)
-        {
-            <text>
-                        Toastify({
-                            text: "@TempData["SuccessMessage"]",
-                        duration: 3000,
-                        close: true,
-                        gravity: "top",
-                        position: "right",
-                        backgroundColor: "#4CAF50",
-                        stopOnFocus: true,
-                            }).showToast();
-            </text>
-        }
-
-                // Display error toast if TempData["ErrorMessage"] exists
-        @if (TempData["ErrorMessage"] != null)
-        {
-            <text>
-                        Toastify({
-                            text: "@TempData["ErrorMessage"]",
-                        duration: 3000,
-                        close: true,
-                        gravity: "top",
-                        position: "right",
-                        backgroundColor: "#f44336",
-                        stopOnFocus: true,
-                            }).showToast();
-            </text>
-        }
-            });
-    </script>
-
-
-
-    @await RenderSectionAsync("Scripts", required: false)
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

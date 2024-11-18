@@ -1,10 +1,11 @@
-﻿@model Product
+﻿@using Microsoft.AspNetCore.Identity
+@model Product
 
 @{
     ViewData["Title"] = "Product Management";
 }
 
-<div class="container mx-auto p-6 ">
+<div class="container mx-auto p-6">
     <h2 class="text-4xl font-extrabold mb-10 text-center text-gray-900 tracking-wide">Product Details</h2>
 
     <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg">
@@ -35,32 +36,68 @@
 
                 <div>
                     <dt class="font-medium text-gray-600">Price:</dt>
-                    <dd class="mt-1 text-lg font-semibold text-gray-800">@Model.Price.ToString("C")</dd>
+                    <dd  class="mt-1 text-lg font-semibold text-gray-800">@Model.Price.ToString("C")</dd>
+                    <dd id="priceDisplay" class="mt-1 text-lg font-semibold text-gray-800"></dd>
+
                 </div>
             </dl>
         </div>
 
-        <!-- Action Buttons -->
-        <div class="px-8 py-6 border-t flex justify-between items-center">
-            <button onclick="openModal('editModal')" class="border border-blue-500 text-blue-500 font-semibold py-2 px-5 rounded-lg transition-colors hover:bg-blue-500 hover:text-white">Edit</button>
-            <button onclick="openModal('deleteModal')" class="border border-red-500 text-red-500 font-semibold py-2 px-5 rounded-lg transition-colors hover:bg-red-500 hover:text-white">Delete</button>
-            <a asp-action="Index" class="text-blue-500 hover:text-blue-700 font-semibold underline">Back to List</a>
+        <!-- Quantity Management -->
+        <div class="px-8 py-6 border-t flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <!-- Quantity Controls -->
+            <div class="flex items-center space-x-4">
+                <button id="decreaseQuantity" class="border border-yellow-500 text-yellow-500 font-semibold py-2 px-5 rounded-lg transition-colors hover:bg-yellow-500 hover:text-white">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <span id="quantityDisplay" class="font-semibold text-gray-700">1</span>
+                <button id="increaseQuantity" class="border border-yellow-500 text-yellow-500 font-semibold py-2 px-5 rounded-lg transition-colors hover:bg-yellow-500 hover:text-white">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+
+            <!-- Order Form -->
+            <form asp-action="Create" asp-area="Order" asp-controller="Orders" method="post" class="inline w-full md:w-auto">
+                @inject UserManager<Employer> UserManager
+                <input type="hidden" name="ProductId" value="@Model.Id" />
+                <input type="hidden" name="Price" value="@Model.Price" />
+
+                <input type="hidden" name="EmployerId" value="@UserManager.GetUserId(User)" />
+                <input type="hidden" id="Quantity" name="Quantity" value="1" />
+
+                <button type="submit" class="border border-green-500 text-green-500 font-semibold py-2 px-5 rounded-lg transition-colors hover:bg-green-500 hover:text-white w-full md:w-auto">
+                    Add to Cart
+                </button>
+            </form>
+        </div>
+
+        <!-- Action Buttons with Icons -->
+        <div class="flex justify-between items-center px-8 py-6 border-t">
+            <!-- Edit Button -->
+            <button onclick="openModal('editModal')" class="border border-blue-500 text-blue-500 font-semibold py-2 px-4 rounded-lg hover:bg-blue-500 hover:text-white">
+                <i class="fas fa-edit"></i> Edit
+            </button>
+
+            <!-- Delete Button -->
+            <button onclick="openModal('deleteModal')" class="border border-red-500 text-red-500 font-semibold py-2 px-4 rounded-lg hover:bg-red-500 hover:text-white">
+                <i class="fas fa-trash"></i> Delete
+            </button>
+
+            <!-- Back to List Button -->
+            <a href="/Product/List" class="border border-gray-500 text-gray-500 font-semibold py-2 px-4 rounded-lg hover:bg-gray-500 hover:text-white">
+                <i class="fas fa-arrow-left"></i> Back to List
+            </a>
         </div>
     </div>
 
+    <!-- Modals -->
     <!-- Edit Modal -->
-    <!-- Edit Modal -->
-    <divl id="editModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-gray-800 bg-opacity-75">
+    <div id="editModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-gray-800 bg-opacity-75">
         <div class="bg-white rounded-lg shadow-lg p-8 w-full md:w-3/4 lg:w-2/3">
             <h3 class="text-2xl font-semibold mb-6 text-gray-800 text-center">Edit Product</h3>
 
-            <!-- Validation Summary for All Errors -->
-            <div asp-validation-summary="All" class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
-                <strong>There were some issues with your submission:</strong>
-            </div>
-
             <form asp-action="Edit" asp-route-id="@Model.Id" method="post" enctype="multipart/form-data">
-                <div class="grid grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label asp-for="Name" class="block text-sm font-medium text-gray-700">Name</label>
                         <input asp-for="Name" class="mt-2 w-full border border-gray-300 rounded-md p-3 focus:outline-none" required />
@@ -85,14 +122,13 @@
                     </div>
                 </div>
 
-                <!-- Action Buttons -->
                 <div class="flex justify-between mt-6">
                     <button type="submit" class="border border-blue-500 text-blue-500 font-semibold py-2 px-6 rounded-lg hover:bg-blue-500 hover:text-white">Update</button>
                     <button type="button" class="border border-gray-300 text-gray-800 font-semibold py-2 px-6 rounded-lg hover:bg-gray-300" onclick="closeModal('editModal')">Cancel</button>
                 </div>
             </form>
         </div>
-    </divl>
+    </div>
 
     <!-- Delete Modal -->
     <div id="deleteModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-gray-800 bg-opacity-75">
@@ -110,20 +146,47 @@
 </div>
 
 @section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- FontAwesome Icons -->
     <script>
-        function openModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-        }
+        $(document).ready(function () {
+            let quantity = 1;
+            const productPrice = parseFloat(@Model.Price);
 
-        function closeModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-        }
+            // Update price display based on quantity
+            function updatePriceDisplay() {
+                const totalPrice = (productPrice * quantity).toFixed(2);
+                $("#priceDisplay").text("total ="+totalPrice+"$");
+            }
+
+            // Increase quantity
+            $("#increaseQuantity").click(function () {
+                quantity++;
+                console.log(quantity);
+                $("#quantityDisplay").text(quantity);
+                updatePriceDisplay();
+                $("#Quantity").val(quantity);
+            });
+
+            // Decrease quantity
+            $("#decreaseQuantity").click(function () {
+                if (quantity > 1) {
+                    quantity--;
+                    $("#quantityDisplay").text(quantity);
+                    updatePriceDisplay();
+                    $("#Quantity").val(quantity);
+                }
+            });
+
+            // Open modal
+            window.openModal = function (modalId) {
+                $("#" + modalId).removeClass('hidden');
+            }
+
+            // Close modal
+            window.closeModal = function (modalId) {
+                $("#" + modalId).addClass('hidden');
+            }
+        });
     </script>
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
 }

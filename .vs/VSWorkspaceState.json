@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\WebTestApp",
+    "\\WebTestApp\\Areas",
+    "\\WebTestApp\\Areas\\Order",
+    "\\WebTestApp\\Areas\\Order\\Views",
+    "\\WebTestApp\\Areas\\Order\\Views\\Orders"
+  ],
+  "SelectedNode": "\\WebTestApp\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

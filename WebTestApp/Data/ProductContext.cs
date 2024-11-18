@@ -23,6 +23,7 @@ namespace WebTestApp.Data
             modelBuilder.Entity<Order>().ToTable("ProductOrders");
             modelBuilder.Entity<Order>().HasOne(o => o.Employer).WithMany().HasForeignKey(o => o.EmployerId);
             modelBuilder.Entity<Order>().HasOne(o => o.Product).WithMany().HasForeignKey(o => o.ProductId);
+            modelBuilder.Entity<Order>().Property(o => o.Status).HasConversion<string>();
         }
     }
 
